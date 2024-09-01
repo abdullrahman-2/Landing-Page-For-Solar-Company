@@ -1,0 +1,684 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main:rgba(24, 146, 103, 0.936);
+    --second:orange;
+}
+.btn1{
+    background-color: var(--main);
+    color: white;
+    border: none;
+    border-radius: 18px;
+    padding: 14px 35px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.btn2{
+    background-color: var(--second);
+    color: black;
+    border: none;
+    border-radius: 18px;
+    padding: 14px 35px;
+    cursor: pointer;
+    text-transform: capitalize;
+} 
+
+nav{
+    height: 100px;
+    width: 100%;
+    background-color: var(--main);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+}
+nav .icon{
+    background-color: #0c7057;
+    padding: 7px 50px;
+}
+nav i{
+    font-size: 30px;
+    color: var(--main);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+nav li{
+    cursor: pointer;
+}
+.active{
+    padding: 0 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: var(--main) 1px solid;
+    box-shadow: 0px 3px 0px 0px  #0c7057;
+    z-index: 5;
+}
+nav .contact{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    padding: 0 70px;
+}
+nav .contact b{
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   
+    nav .icon{
+        display: none;
+    }
+  }
+/* _____________________________________________ */
+header{
+    background-image: url(./images/solar-panels-meadow\ 1.png);
+    background-size: cover;
+    height: 700px;
+    text-transform: capitalize;
+    color: white;
+}
+header .bar{
+    padding: 100px 130px ;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+header .wide{
+    height: 5px;
+    width: 200px;
+    background-color: #0c7057;
+    opacity: 0.5;
+}
+header .all{
+    width: 80px;
+    height: 5px;
+    background-color: white;
+}
+header .install{
+    padding: 20px 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+header .install h1{
+    width: 450px;
+    letter-spacing: 1px;
+    font-size: 38px;
+}
+header .install b{
+    width: 600px;
+    letter-spacing: 1px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   
+    header .bar{
+        padding: 100px 20px ;
+    }
+    header .install{
+        padding: 20px 20px;
+  }
+}
+/* ___________________________ */
+.friendliest{
+    width: 80%;
+    margin: 110px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.friendliest .details{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 650px;
+}
+.friendliest .details h2{
+    font-weight: bold;
+    font-size: 45px;
+    text-transform: capitalize;
+
+}
+.friendliest .details p{
+    font-size: 20px;
+    opacity: 0.6;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cont2{
+    font-size: 22px;
+    display: flex;
+    gap: 10px;
+}
+.cont2 span{
+    color: var(--main);
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   
+   .friendliest{
+    flex-direction: column;
+    gap: 20px;
+   }
+  }
+/* __________________________________ */
+.cost{
+    background-image: url(./images/8116\ 1.png);
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 45px;
+    color: white;
+}
+.cost b{
+    margin-left: 130px;
+    font-size: 42px;
+    font-weight: 700;
+}
+.cost p{
+    margin-left: 130px;
+    font-size: 25px;
+    width: 700px;
+}
+.cost .btn2{
+    margin-left: 130px;
+    width: 200px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   
+    .cost{
+        align-items: center;
+        width: 100%;
+    }
+    .cost p{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .cost b{
+        margin-left: 0px;
+    }
+    .cost .btn2{
+        margin-left: 0px;
+    }
+}
+/* ____________________________ */
+.kits{
+    margin: 130px;
+}
+.kits .conta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.conta b{
+    font-size: 42px;
+}
+.kits p{
+    font-size: 18px;
+    opacity: 0.6;
+}
+.conta p{
+    margin: 30px;
+    text-align: center;
+    width: 850px;
+}
+.contai{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card{
+    height: 480px;
+    width: 400px;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.card b{
+    margin-left: 30px;
+    font-size: 25px;
+}
+.card p{
+    margin: 5px 30px ;
+}
+.card a{
+    color: var(--main);
+    text-decoration: none;
+    margin-left: 30px;
+    display: flex;
+    gap: 10px;
+}
+.card a i{
+    margin-top: 2px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   
+    .kits p{
+        width: 80%;
+    }
+}
+/* ______________________________*/
+.replacement{
+    width: 100%;
+    height: 600px;
+    background-image: url(./images/8116\ 1\ \(1\).png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.replacement div{
+    background-color: black;
+    height: 400px;
+    width: 50%;
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px); */
+    opacity: 0.8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+}
+.replacement div b{
+    font-size: 42px;
+    text-transform: capitalize;
+}
+.replacement div p{
+    margin: 10px auto;
+    width: 84%;
+    font-size: 22px;
+    text-align: center;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   
+    .replacement div{
+        height: 500px;
+    }
+    .replacement div b{
+        text-align: center;
+    }
+}
+/* _____________________________ */
+.innovators{
+    background-color: rgb(255, 255, 243);
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innovators .mc{
+    height: 800px;
+    width: calc(100% - 260px );
+    display: flex;
+    gap: 200px;
+}
+.innovators .details{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 40px;
+    width: 600px;
+}
+.innovators .details i{
+    color: var(--main);
+    font-size: 42px;
+}
+.innovators .details b{
+    font-size: 42px;
+    /* width: 42%; */
+}
+.innovators .details p{
+    font-size: 20px;
+    /* width: 42%; */
+    opacity: 0.6;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.container .cards{
+    border: var(--main) 1px solid;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+}
+.cards img{
+    border-radius: 15px;
+    height: 100px;
+}
+.cards b{
+    font-size: 25px;
+}
+.cards p{
+    opacity: 0.6;
+    font-size: 20px;
+}
+.cards a{
+    color: var(--main);
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+}
+.cards span{
+    text-decoration: underline;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   
+    .innovators{
+        height: 2300px;
+    }
+    .innovators .mc{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .innovators .details i{
+       text-align: center;
+    }
+    .innovators .details b{
+       text-align: center;
+    }
+    .innovators .details p{
+        text-align: center;
+    }
+}
+/* ____________________________ */
+.values{
+    margin: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: column;
+}
+.values b{
+    font-size: 42px;
+}
+.values p{
+    opacity: 0.6;
+    font-size: 22px;
+}
+.handle{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.vcard{
+    height: 500px;
+    width: 400px;
+    border: var(--main) 1px solid;
+    border-radius: 15px;
+    background-color: rgba(230, 249, 242, 0.934) ;
+    padding: 30px ;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.vcard .icons{
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    color: var(--main);
+}
+.fa-hand-holding{
+    font-size: 35px;
+    margin-top: -10px;
+}
+.vcard b{
+    font-size: 25px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .handle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+/* __________________________________ */
+.say{
+    margin: 130px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.say .left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 350px;
+}
+.left i{
+    font-size: 42px;
+    color: var(--main);
+}
+.left b{
+    font-size: 42px;
+}
+.left p{
+    opacity: 0.6;
+    font-size: 22px;
+}
+.say .right{
+    background-color:  rgba(230, 249, 242, 0.934) ;
+    border-radius: 15px;
+    height: 300px;
+    width: 55%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.up{
+    display: flex;
+    justify-content: space-between;
+}
+.up b{
+    color: var(--main);
+    font-size: 20px;
+}
+.not{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.not div{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+.not div:nth-child(1){
+    background-color: #444;
+}
+.right p{
+    font-size: 30px;
+}
+.down{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.st{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.st .name{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.name span{
+    opacity: 0.8;
+}
+.sec{
+    display: flex;
+    gap: 20px;
+}
+.sec i{
+    font-size: 50px;
+    color: var(--main);
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .say .left p{
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        text-align: center;
+        
+    }
+    .say .left{
+        gap: 0;
+        margin-top: -100px;
+    }
+    .say{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 900px;
+        gap: 0;
+    }
+    .say .left b{
+        text-align: center;
+    }
+    .say .right{
+        margin-top: -150px;
+        height: 420px;
+    }
+}
+/* _________________________________ */
+footer{
+    height: 300px;
+    padding: 50px 130px;
+    background-color: #212b3e;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+}
+.containn{
+    display: flex;
+    justify-content: space-between;
+}
+.link img{
+    height: 80px;
+    width: 280px;
+}
+.links{
+    margin-top: 30px;
+    display: flex;
+    gap: 45px;
+}
+.links a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 5px;
+}
+.news input{
+    border: 1px white solid;
+    border-radius: 18px;
+    padding: 14px 35px;
+    width: 280px;
+    background-color: #212b3e00;
+    outline-style: none;
+    color: white;
+}
+.news input::placeholder{
+    color: white;
+}
+.news .btn2{
+    color: white;
+    margin-left: -131px;
+}
+footer p{
+    opacity: 0.6;
+}
+.end{
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.6;
+
+}
+.terms{
+    display: flex;
+    gap: 20px;
+}
+.terms a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.copyright span{
+    font-size: 14px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    footer{
+        height: 400px;
+        padding: 50px 0;
+    }
+    .containn{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .link{
+        margin-bottom: 40px;
+    }
+    .news{
+        text-align: center;
+    }
+    .news .btn2{
+        margin-left: -130px;
+    }
+    .end{
+       width: 96%;
+       margin: auto;
+    
+    }
+}
